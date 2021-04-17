@@ -8,3 +8,5 @@ python manage.py populate <csv_filepath>
 python manage.py setids
 ```
 
+## Frontend
+See [github.com/wborgeaud/blindfolded-puzzles](https://github.com/wborgeaud/blindfolded-puzzles) for the frontend repository.
