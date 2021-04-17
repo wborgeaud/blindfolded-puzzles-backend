@@ -1,4 +1,4 @@
-#Blindfolded Puzzles backend
+# Blindfolded Puzzles backend
 This is the backend repository for [blindfoldedpuzzles.xyz](https://blindfoldedpuzzles.xyz].
 
 ## Populate the database
