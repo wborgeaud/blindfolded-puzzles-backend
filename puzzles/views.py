@@ -2,14 +2,14 @@ import random
 from django.http import JsonResponse
 from django.forms.models import model_to_dict
 
-from .models import Puzzle
+from .models import Puzzle, PuzzleId
 
 
 def random_puzzle(request):
     max_pieces = int(request.GET.get('max_pieces', 32))
     qs = Puzzle.objects.filter(piece_count__lte=max_pieces)
     count = qs.count()
-    p = qs[random.randint(0, count - 1)]
+    p = PuzzleId.objects.all()[random.randint(0, count - 1)].puzzle
     return JsonResponse(model_to_dict(p))
 
 

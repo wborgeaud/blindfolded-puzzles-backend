@@ -19,12 +19,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vt(kfosrwn$tdn*v@##336@(sy+s8__#!$k9+%-++3-)#k*fj&'
+import os
+SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['51.145.213.219', 'blindfoldedpuzzles.westeurope.cloudapp.azure.com', 'api.blindfoldedpuzzles.xyz']
 
 # Application definition
 

@@ -27,3 +27,7 @@ class Puzzle(models.Model):
             models.Index(fields=["piece_count"]),
             models.Index(fields=["piece_count_without_pawns"]),
         ]
+
+
+class PuzzleId(models.Model):
+    puzzle = models.ForeignKey(Puzzle, on_delete=models.RESTRICT)
