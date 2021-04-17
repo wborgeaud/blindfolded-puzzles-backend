@@ -1,5 +1,5 @@
 # Blindfolded Puzzles backend
-This is the backend repository for [blindfoldedpuzzles.xyz](https://blindfoldedpuzzles.xyz].
+This is the backend repository for [blindfoldedpuzzles.xyz](https://blindfoldedpuzzles.xyz).
 
 ## Populate the database
 To populate the database, first download the csv file at [database.lichess.org/#puzzles](https://database.lichess.org/#puzzles). Then run 
